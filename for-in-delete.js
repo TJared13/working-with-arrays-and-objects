@@ -80,6 +80,12 @@ function showValues( obj ) {
 */
 
 //Code Here
+function secrets(obj){
+  let string = '';
+  for (let key in obj){
+    
+  }
+}
 
 
 
