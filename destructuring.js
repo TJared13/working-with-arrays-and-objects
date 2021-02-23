@@ -81,26 +81,14 @@ function totalPopulation(states){
 */
 
 //Code Here
-let obj = {
-  carbs: 'flour',
-  fat: 'butter',
-  protein: 'eggs'
-}
 
 function ingredients(obj){
-  let {carbs, fat, protein} = obj;
-} 
-  
-  
-  //   let newArr = [];{
-  //   carbs = 'flour';
-  //   fat = 'butter';
-  //   protein = 'eggs'
-  
-  //     newArr.push(obj)
-  //   }
-  //   return newArr;
-  // }
+  const {carb, fat, protein} = obj;
+  let newArr = [];
+  newArr.push(carb, fat, protein);
+  return newArr;
+}
+    
 
 ////////// PROBLEM 5 //////////
 
@@ -118,6 +106,11 @@ function ingredients(obj){
 
 //Code Here
 
+function largeNumbers({first, second, third}){
+  return Math.min(first, second, third)
+}
+
+
 
 
 ////////// PROBLEM 6 //////////
@@ -130,4 +123,12 @@ function ingredients(obj){
 
 //Code Here
 
-
+function numberGroups({a, b, c}){
+  if (a.length > b.length && a.length > c.length) {
+    return a;
+  } else if (b.length > a.length && b.length > c.length) {
+    return b;
+  } else {
+    return c;
+  }
+}

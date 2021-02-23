@@ -141,5 +141,5 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 */
 
  let bobsTotal = purchases.filter(elem => elem.owner === 'Bob')
- .map(elem => elem.price)
- .reduce((total, num) => total + num)
+.map(elem => elem.price)
+.reduce((total, num) => total + num)
